@@ -1,0 +1,1 @@
+"""Finance tracking application package."""
