@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-tracker-cli"
+version = "0.1.0"
+description = "Aplicativo de linha de comando para monitoramento financeiro pessoal"
+readme = "README.md"
+authors = [{name = "Rcscunha"}]
+requires-python = ">=3.10"
+
+[project.scripts]
+finance-tracker = "finance_app.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
